@@ -1,0 +1,84 @@
+<!DOCTYPE HTML>
+<head>
+<title>Kevin Ha</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans:400,600' rel='stylesheet' type='text/css'>
+<link href='http://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+<link href='images/favicon.png' rel='icon'/>
+<link rel='stylesheet' href='css/reset.css' type='text/css' media='all' />
+<link rel='stylesheet' href='css/main.css' type='text/css' media='all' />
+<link rel='stylesheet' href='css/colorbox.css' type='text/css' media='all' />
+</head>
+<body>
+
+<div id="headerInfo">
+<ul id='nav'>
+	<li><a href="#home" class="brackets">Home</a></li>
+	<li><a href="#work" class="brackets">Work</a></li>
+	<li><a href="#resume" class="brackets">Resume</a></li>
+</ul>
+</div>
+<div id="container">
+<!-- start header-->
+<section id='home'>
+	<div id="header">
+		<div class="section clearfix">
+			<div id="logo"><img src="images/me.jpg" alt="logo" id="imgLogo"></div>
+		</div>
+	</div>
+
+	<div id="content">
+
+	<div id="aboutSection">
+
+		<p id="aboutMe">Hi I'm Kevin Ha</p>
+
+		<p id="aboutMeContent">I enjoy making functional yet simple designs and have an interest in front-end development and user experience. I recently graduated from RIT with a BS in Information Technology. </p>
+	</div>
+	</div>
+</section>
+<section id='work'>
+	<h2 id="contentTitle">Recent Work</h2>
+
+<div class="group">
+
+	<div class="view view-first">
+		 <a class='work' href='images/projects/flash_project.jpg' title='NBA standings visualizer done using flash and actionscript.'><img src='images/projects/flash_project.jpg' alt=' '></a>
+	</div>
+
+	<div class="view view-first">
+		 <a class='work' href='images/projects/erf.jpg' title='<p>Card game and chat room created in java. </p><p>Download the <a href="images/projects/ChatGUI.jar">client</a> and <a href="images/projects/MyServer.jar">server</a>.</p>'><img src='images/projects/erf.jpg' alt=' '></a>
+	</div>
+
+
+	<div class="view view-first">
+		 <a class='work' href='images/projects/shop.jpg' title='<p>E-commerce book store with basic functionality done in PHP.</p><p> Currently not accessable without a RIT proxy.</p>'><img src='images/projects/shop.jpg' alt=' '></a>
+	</div>
+
+	<div class="view view-first">
+		 <a class='work' href='images/projects/restaurant.jpg' title='Website created for Asia Chinese Restaurant in San Antonio,TX. See website <a href="asiachinesecuisine.com">here</a>'><img src='images/projects/restaurant.jpg' alt=' '></a>
+	</div>
+
+	<div class="view view-first">
+		 <a class='work' href='images/projects/redesign.jpg' title='<p>Site redesign done for the Website Design &amp; Implementation course. See site <a href="http://people.rit.edu/kjh7831/projects/redesign">here</a></p>'><img src='images/projects/redesign.jpg' alt=' '></a>
+	</div>
+</div>
+
+</section>
+<section id='resume'>
+
+</section>
+</div>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="js/jquery.nav.js"></script>
+<script src="js/jquery.colorbox.js"></script>
+	<script>
+		$(document).ready(function() {
+			$('#nav').onePageNav();
+			$(".work").colorbox({rel:'view'});
+		});
+	</script>
+</body>
+</html>
