@@ -1,0 +1,89 @@
+* {
+    --white: #ecf1f0;
+    --purple: #4a4e69;
+    font-family: Lato;
+}
+
+html {
+    height: 100%;
+}
+
+body {
+    height: 100%;
+    background-color: var(--white);
+}
+
+.greeting {
+    color: var(--purple);
+    font-size: 5rem;
+}
+
+.intro {
+    font-size: 1.5rem;
+    color: var(--purple);
+}
+
+.intro, .icon--container {
+    text-align: right;
+}
+
+img, .intro, .icon--container {
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+.loadAnim {
+    opacity: 1;
+}
+
+img {
+    width: 25rem;
+    height: 25rem;
+    border-radius: 50%;
+}
+
+.left, .right {
+    position: absolute;
+    height: 100%;
+    width: 50%;
+}
+
+.left {
+    left: 250px;
+    height: 100vh;
+    align-items: center;
+    -webkit-box-align: center;
+    display: flex;
+}
+
+.left--container {
+    /* height: 100vh; */
+    -webkit-box-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    -webkit-box-pack: center;
+    flex-flow: column;
+}
+
+.left--container > section {
+    margin: 5px 0;
+}
+
+.right {
+    right: 0px;
+    height: 100vh;
+    align-items: center;
+    -webkit-box-align: center;
+    display: flex;
+}
+
+.icon--link {
+    color: unset;
+    margin: 5px;
+    text-decoration: none;
+}
+
+.icon--link > svg:hover {
+    fill: var(--purple);
+}
